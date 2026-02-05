@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --wood: #8b5a3c;
+  --wood-dark: #654321;
+  --wood-light: #a67c52;
+  --beige: #f5f1e8;
+  --beige-dark: #e8dcc8;
+  --accent: #c1272d;
+  --accent-dark: #a01f24;
+  --gray-800: #2d2d2d;
+  --gray-700: #4a4a4a;
+  --gray-600: #6b6b6b;
+  --success: #059669;
+}
+
+@layer theme {
+  :root {
+    --color-wood: var(--wood);
+    --color-wood-dark: var(--wood-dark);
+    --color-wood-light: var(--wood-light);
+    --color-beige: var(--beige);
+    --color-beige-dark: var(--beige-dark);
+    --color-accent: var(--accent);
+    --color-accent-dark: var(--accent-dark);
+    --color-gray-800: var(--gray-800);
+    --color-gray-700: var(--gray-700);
+    --color-gray-600: var(--gray-600);
+    --color-success: var(--success);
+  }
+}
+
+body {
+  background: var(--beige);
+  color: var(--gray-800);
+  font-family:
+    var(--font-noto-sans-jp),
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
